@@ -27,10 +27,7 @@
             "Tipoff\\LaravelShippoApi\\": "src",
             "Tipoff\\LaravelShippoApi\\Database\\Factories\\": "database/factories",
             "Tipoff\\LaravelShippoApi\\Database\\Seeders\\": "database/seeders"
-        },
-        "files": [
-            "src/Helpers/SerpApiSearch.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
