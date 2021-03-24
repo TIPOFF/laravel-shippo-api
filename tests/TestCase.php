@@ -11,7 +11,6 @@ use Tipoff\LaravelShippoApi\LaravelShippoApiServiceProvider;
 use Tipoff\Locations\LocationsServiceProvider;
 use Tipoff\Support\SupportServiceProvider;
 use Tipoff\TestSupport\BaseTestCase;
-use Tipoff\TestSupport\Providers\NovaPackageServiceProvider;
 
 class TestCase extends BaseTestCase
 {
