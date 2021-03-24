@@ -5,11 +5,13 @@ declare(strict_types=1);
 namespace Tipoff\LaravelShippoApi\Tests;
 
 use Laravel\Nova\NovaCoreServiceProvider;
+use Tipoff\Addresses\AddressesServiceProvider;
+use Tipoff\Authorization\AuthorizationServiceProvider;
 use Tipoff\LaravelShippoApi\LaravelShippoApiServiceProvider;
-use Tipoff\LaravelShippoApi\Tests\Support\Providers\NovaTestbenchServiceProvider;
 use Tipoff\Locations\LocationsServiceProvider;
 use Tipoff\Support\SupportServiceProvider;
 use Tipoff\TestSupport\BaseTestCase;
+use Tipoff\TestSupport\Providers\NovaPackageServiceProvider;
 
 class TestCase extends BaseTestCase
 {
@@ -18,9 +20,11 @@ class TestCase extends BaseTestCase
         return [
             NovaCoreServiceProvider::class,
             NovaTestbenchServiceProvider::class,
-            LaravelShippoApiServiceProvider::class,
             SupportServiceProvider::class,
+            AuthorizationServiceProvider::class,
+            AddressesServiceProvider::class,
             LocationsServiceProvider::class,
+            LaravelShippoApiServiceProvider::class,
         ];
     }
 }
