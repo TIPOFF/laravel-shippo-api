@@ -2,7 +2,7 @@
 
 All notable changes to `laravel-shippo-api` will be documented in this file.
 
-## 1.0.0 - 2021-0X-XX
+## 1.0.0-beta - 2021-05-09
 
-- initial release
+- Beta release with basic functionality.
 
