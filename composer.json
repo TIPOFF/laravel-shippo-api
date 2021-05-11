@@ -16,6 +16,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
+        "shippo/shippo-php": "1.*"
         "tipoff/authorization": "^2.8.5",
         "tipoff/support": "^2.1.5"
     },
@@ -46,7 +47,10 @@
         "laravel": {
             "providers": [
                 "Tipoff\\LaravelShippoApi\\LaravelShippoApiServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "ShippoApi": "Tipoff\\LaravelShippoApi\\Facades\\ShippoApiFacade"
+            }
         }
     },
     "repositories": [

@@ -22,9 +22,24 @@ php artisan vendor:publish --provider="Tipoff\LaravelShippoApi\LaravelShippoApiS
 This is the contents of the published config file:
 
 ```php
+<?php
+
 return [
+        'api_key'=>env('SHIPPO_API_KEY')
 ];
 ```
+
+For the testing and development environment, set an environmental variable as follows:
+```
+SHIPPO_API_KEY="shippo_test_4d3da3e82c7...."
+```
+
+For production, set an environmental variable as follows:
+```
+SHIPPO_API_KEY="shippo_live_4d3da3e82c7...."
+```
+N.B.: _This key will be charged to print labels and for shipping._
+
 
 ## Testing
 

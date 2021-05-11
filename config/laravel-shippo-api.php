@@ -1,3 +1,5 @@
 <?php
 
-return [];
+return [
+        'api_key'=>env('SHIPPO_API_KEY')
+];
